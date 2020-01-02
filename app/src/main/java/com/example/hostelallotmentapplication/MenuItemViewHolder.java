@@ -24,7 +24,7 @@ public class MenuItemViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View view) {
                 Intent book = new Intent(itemView.getContext(), RoomBooking.class);
-                book.putExtra("name", menuItemNameid);
+                //book.putExtra("name", menuItemNameid);
                 itemView.getContext().startActivity(book);
             }
         });

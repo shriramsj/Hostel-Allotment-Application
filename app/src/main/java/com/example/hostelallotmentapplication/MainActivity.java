@@ -9,20 +9,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
-
 public class MainActivity extends AppCompatActivity {
 
-    TextInputEditText idText, passwordText;
-    TextInputLayout user,pass;
+    EditText idText, passwordText;
     Button login;
     int c;
     String id_input, password_input;
     String[] id = {"f20190189", "f20190211", "f20190155", "f20190149","f20191127"};
     String[] password = {"fd000001", "fd000002", "fd000003", "fd000004","fd000005"};
     String[] name = {"Hersh K", "S. Hariharan", "Kshitij G", "Mitanshu A", "Shriram J",};
-    String[] hostel = {"DH2", "DH3", "DH3", "DH3", "DH3",};
+    String[] hostel = {"AH2", "AH5", "AH7", "DH3", "CH5",};
     String[] roomnum = {"329-L", "320-L", "215-R", "104-L", "102-L",};
 
 
@@ -30,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        user=findViewById(R.id.user);
-        pass=findViewById(R.id.pass);
+
         idText = findViewById(R.id.login_IDEditTExt);
         passwordText = findViewById(R.id.login_passwordEditText);
         login = findViewById(R.id.loginbtn);

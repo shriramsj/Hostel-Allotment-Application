@@ -1,5 +1,6 @@
 package com.example.hostelallotmentapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,7 @@ public class RoomBooking extends AppCompatActivity {
 
     int No;
     EditText id_1_EditText, id_2_EditText, id_3_EditText, id_4_EditText, id_5_EditText;
-    Button Next, Save;
+    Button Next, Save, Logout;
     TextView id_1_TextView, id_2_TextView, id_3_TextView, id_4_TextView, id_5_TextView ;
     //TextView alertTexView;
     TextInputLayout textInputLayout;
@@ -59,6 +60,22 @@ public class RoomBooking extends AppCompatActivity {
                 }
             }
         });
+
+        Save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(RoomBooking.this, "Your preferences have been saved!", Toast.LENGTH_LONG).show();
+            }
+        });
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logout = new Intent(RoomBooking.this, MainActivity.class);
+                startActivity(logout);
+            }
+        });
+
+
     }
 
     private void initialize() {
@@ -67,6 +84,7 @@ public class RoomBooking extends AppCompatActivity {
         textInputLayout=findViewById(R.id.nor);
         textInputEditText=findViewById(R.id.no);
         Save = findViewById(R.id.save_btn);
+        Logout = findViewById(R.id.logout_btn);
         id_1_EditText=findViewById(R.id.ID_1_EditText);
         id_2_EditText=findViewById(R.id.ID_2_EditText);
         id_3_EditText=findViewById(R.id.ID_3_EditText);

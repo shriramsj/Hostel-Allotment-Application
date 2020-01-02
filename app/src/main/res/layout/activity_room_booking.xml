@@ -200,4 +200,11 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:textSize="20sp"
+        android:id="@+id/logout_btn"/>
+
 </LinearLayout>
