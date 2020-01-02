@@ -1,0 +1,4 @@
+app	      gradle.properties			  local.properties
+build.gradle  gradlew				  settings.gradle
+deleteme.txt  gradlew.bat
+gradle	      Hostel\ Allotment\ Application.iml
