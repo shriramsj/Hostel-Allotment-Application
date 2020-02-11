@@ -51,13 +51,13 @@ public class RecycleView extends AppCompatActivity {
                     itemList.add(new MenuItem(names[i], side[i]));
                 }
                 break;
-            /*case "AH7":
+            case "AH7":
             case "AH8":
             case "AH9":
                 for (int i = 7; i < 10; i++) {
                     itemList.add(new MenuItem(names[i], side[i]));
                 }
-                break;*/
+                break;
             case "DH1":
             case "DH2":
             case "DH3":
