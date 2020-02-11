@@ -66,22 +66,22 @@ public class RecycleView extends AppCompatActivity {
                     itemList.add(new MenuItem(names[i], side[i]));
                 }
                 break;
-            /*case "CH1":
+            case "CH1":
             case "CH2":
             case "CH3":
                 for (int i = 6; i < 9; i++) {
                     itemList.add(new MenuItem(names[i], side[i]));
                 }
-                break;*/
+                break;
             case "CH4":
                 itemList.add(new MenuItem(names[17], side[17]));
                 break;
             case "CH5":
                 itemList.add(new MenuItem(names[18], side[18]));
                 break;
-            /*case "CH6":
+            case "CH6":
                 itemList.add(new MenuItem(names[18], side[18]));
-                break;*/
+                break;
             case "CH7":
                 itemList.add(new MenuItem(names[16], side[16]));
                 break;
